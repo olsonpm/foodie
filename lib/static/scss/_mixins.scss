@@ -1,0 +1,130 @@
+//
+// fine-grained element spacing
+//
+@mixin per-size($prop-list, $xxs, $xs, $sm, $md, $lg, $unit: null) {
+  @media (max-width: $screen-xxs-max) {
+    @each $prop in $prop-list {
+      #{$prop}: #{$xxs}#{$unit};
+    }
+  }
+  @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+    @each $prop in $prop-list {
+      #{$prop}: #{$xs}#{$unit};
+    }
+  }
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    @each $prop in $prop-list {
+      #{$prop}: #{$sm}#{$unit};
+    }
+  }
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    @each $prop in $prop-list {
+      #{$prop}: #{$md}#{$unit};
+    }
+  }
+  @media (min-width: $screen-lg-min) {
+    @each $prop in $prop-list {
+      #{$prop}: #{$lg}#{$unit};
+    }
+  }
+}
+
+//
+// general purpose element spacing
+//
+$element-spacing-map: (
+  xxs: (xxs: 2, xs: 6, sm: 12, md: 14, lg: 18, xl: 26, xxl: 60)
+  , xs: (xxs: 2, xs: 7, sm: 13, md: 16, lg: 22, xl: 32, xxl: 70)
+  , sm: (xxs: 3, xs: 7, sm: 13, md: 18, lg: 28, xl: 38, xxl: 80)
+  , md: (xxs: 4, xs: 8, sm: 14, md: 20, lg: 32, xl: 44, xxl: 90)
+  , lg: (xxs: 4, xs: 8, sm: 14, md: 22, lg: 36, xl: 50, xxl: 100)
+);
+@mixin res-aware-element-spacing($prop-list, $size, $unit: px) {
+  @media (max-width: $screen-xxs-max) {
+    @each $prop in $prop-list {
+      #{$prop}: map-get(map-get($element-spacing-map, 'xxs'), $size)#{$unit};
+    }
+  }
+  @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+    @each $prop in $prop-list {
+      #{$prop}: map-get(map-get($element-spacing-map, 'xs'), $size)#{$unit};
+    }
+  }
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    @each $prop in $prop-list {
+      #{$prop}: map-get(map-get($element-spacing-map, 'sm'), $size)#{$unit};
+    }
+  }
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    @each $prop in $prop-list {
+      #{$prop}: map-get(map-get($element-spacing-map, 'md'), $size)#{$unit};
+    }
+  }
+  @media (min-width: $screen-lg-min) {
+    @each $prop in $prop-list {
+      #{$prop}: map-get(map-get($element-spacing-map, 'lg'), $size)#{$unit};
+    }
+  }
+}
+
+$font-size-heading-map: (
+  xxs: (base: 12, md: 20, lg: 20, xl: 24, xxl: 32)
+  , xs: (base: 14, md: 22, lg: 23, xl: 28, xxl: 34)
+  , sm: (base: 15, md: 22, lg: 23, xl: 30, xxl: 36)
+  , md: (base: 16, md: 24, lg: 26, xl: 32, xxl: 40)
+  , lg: (base: 16, md: 24, lg: 26, xl: 32, xxl: 40)
+);
+@mixin res-aware-font-size-heading($size) {
+  @media (max-width: $screen-xxs-max) {
+    font-size: map-get(map-get($font-size-heading-map, 'xxs'), $size)#{$px};
+  }
+  @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+    font-size: map-get(map-get($font-size-heading-map, 'xs'), $size)#{$px};
+  }
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    font-size: map-get(map-get($font-size-heading-map, 'sm'), $size)#{$px};
+  }
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    font-size: map-get(map-get($font-size-heading-map, 'md'), $size)#{$px};
+  }
+  @media (min-width: $screen-lg-min) {
+    font-size: map-get(map-get($font-size-heading-map, 'lg'), $size)#{$px};
+  }
+}
+
+$font-size-body-map: (
+  xxs: (base: 16, md: 18, lg: 19, xl: 20, xxl: 32)
+  , xs: (base: 16, md: 18, lg: 21, xl: 24, xxl: 34)
+  , sm: (base: 16, md: 18, lg: 21, xl: 26, xxl: 36)
+  , md: (base: 18, md: 20, lg: 24, xl: 28, xxl: 40)
+  , lg: (base: 18, md: 20, lg: 24, xl: 28, xxl: 40)
+);
+@mixin res-aware-font-size-body($size) {
+  @media (max-width: $screen-xxs-max) {
+    font-size: map-get(map-get($font-size-body-map, 'xxs'), $size)#{$px};
+  }
+  @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+    font-size: map-get(map-get($font-size-body-map, 'xs'), $size)#{$px};
+  }
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    font-size: map-get(map-get($font-size-body-map, 'sm'), $size)#{$px};
+  }
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    font-size: map-get(map-get($font-size-body-map, 'md'), $size)#{$px};
+  }
+  @media (min-width: $screen-lg-min) {
+    font-size: map-get(map-get($font-size-body-map, 'lg'), $size)#{$px};
+  }
+}
+
+@mixin cf() {
+  &:before
+  , &:after {
+    content: '';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}

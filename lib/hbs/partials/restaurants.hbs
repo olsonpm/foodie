@@ -1,0 +1,18 @@
+{{~# each restaurants ~}}
+  <li>
+    <h4>{{ name }}</h4>
+
+    <dl>
+      <dt class="address">Address</dt>
+      <dd>{{{ address }}}</dd>
+
+      <dt class="votes">Votes</dt>
+      <dd>{{ votes }}</dd>
+
+      <dt class="overall">Overall Rating</dt>
+      <dd>{{ aggregate }}</dd>
+    </dl>
+
+    <a href="{{ url }}">See more details at Zomato</a>
+  </li>
+{{~/ each ~}}

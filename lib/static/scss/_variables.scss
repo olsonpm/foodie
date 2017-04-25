@@ -1,0 +1,52 @@
+$site-width: 1000px;
+
+// colors
+
+$primary: #5880b1;
+$primary-bright: #3e88e4;
+$primary-dark: #233142;
+$primary-light: #e9eef5;
+$secondary: #ff9867;
+$secondary-dark: #b56f4e;
+$secondary-light: #ffdecf;
+
+$success: #87de68;
+$error: #ffb4b4;
+
+$bg: white;
+// $fg: #1e1e1e;
+$fg: $primary-dark;
+
+$bg-dark-l1: darken($bg, 5%);
+$bg-dark-l2: darken($bg, 10%);
+$bg-dark-l3: darken($bg, 30%);
+
+
+// slightly modified from bootstrap
+
+$screen-xs-min: 600px;
+$screen-sm-min: 750px;
+$screen-md-min: 900px;
+$screen-lg-min: $site-width;
+
+$screen-xxs-max: ($screen-xs-min - 1);
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-sm-max: ($screen-md-min - 1);
+$screen-md-max: ($screen-lg-min - 1);
+
+// can't figure out why I need to interpolate 'px' in order to get it concatenating
+//   with values properly (e.g. map-get(<some map>, <some key>)px results in
+//   an invalid "<val> px" as opposed to "<val>px"
+$px: px;
+
+
+// misc
+
+$radius-small: 4px;
+$radius-normal: 8px;
+$radius-lg: 16px;
+
+$duration-short: 0.2s;
+$duration-medium: 0.4s;
+$duration-long: 0.6s;
+$duration-debug: 2s;

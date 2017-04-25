@@ -1,0 +1,77 @@
+#results {
+  > p {
+    .important {
+      font-weight: bold;
+    }
+  }
+}
+
+#restaurants {
+  > li {
+    @include res-aware-element-spacing(
+      ('padding-left', 'padding-right', 'padding-bottom')
+      , 'md'
+    );
+    @include res-aware-element-spacing('padding-top', 'sm');
+    @include res-aware-element-spacing('margin-top', 'md');
+
+    border-left: 10px solid $secondary;
+    border-top: 2px solid $secondary-light;
+    border-right: 2px solid $secondary-light;
+    border-bottom: 2px solid $secondary-light;
+    border-radius: $radius-normal;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+
+    &:nth-child(odd) {
+      margin-right: 5%;
+    }
+
+    > h4 {
+      @include per-size('line-height', '24', '26', '26', '28', '28', 'px');
+      @include res-aware-element-spacing('margin-bottom', 'sm');
+    }
+
+    dt {
+      font-weight: bold;
+    }
+
+    dt.votes, dt.overall {
+      @include res-aware-element-spacing('margin-top', 'xs');
+      @include res-aware-element-spacing('padding-right', 'xs');
+
+      float: left;
+      clear: left;
+      vertical-align: middle;
+
+      &:after {
+        content: ':'
+      }
+
+      + dd {
+        @include res-aware-element-spacing('margin-top', 'xs');
+        float: left;
+        clear: right;
+        vertical-align: middle;
+      }
+    }
+
+    > dl {
+      @include res-aware-element-spacing('margin-bottom', 'xs');
+      @include cf;
+    }
+
+    > a {
+      color: $primary-bright;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      width: 100%;
+      max-width: 480px;
+    }
+    @media (min-width: $screen-sm-min) {
+      width: 45%
+    }
+  }
+}

@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p, input[type="text"], textarea {
+  line-height: 1.2;
+}
+
+dd {
+  margin-left: 0;
+}
+
+body, dl, input, pre {
+  margin: 0;
+}

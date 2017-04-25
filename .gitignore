@@ -1,0 +1,6 @@
+/dist/
+/node_modules/
+/test.js
+
+/lib/static/js/precompiled-templates.js
+/lib/api/tags.json

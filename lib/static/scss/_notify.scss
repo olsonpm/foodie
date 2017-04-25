@@ -1,0 +1,41 @@
+#notify-wrapper {
+  left: 50%;
+  overflow: visible;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 1000;
+
+  > .content {
+    @include res-aware-element-spacing(('padding-left', 'padding-right'), 'md');
+    @include res-aware-element-spacing(('padding-top', 'padding-bottom'), 'sm');
+
+    border-radius: $radius-normal;
+    display: inline-block;
+    opacity: 0;
+    transition: all $duration-medium ease-out;
+    transition-property: transform, opacity;
+    visibility: hidden;
+
+    &.success {
+      background-color: $success;
+    }
+    &.error {
+      background-color: $error;
+    }
+
+    &.enter, &.exit {
+      visibility: visible;
+    }
+    &.enter {
+      opacity: 1;
+      transform: translateY(15px);
+    }
+    &.exit {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+  }
+}

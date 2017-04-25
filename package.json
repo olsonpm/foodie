@@ -1,0 +1,88 @@
+{
+  "name": "foodie",
+  "version": "0.1.0",
+  "description": "Just a greedy api consumer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olsonpm/foodie.git"
+  },
+  "author": "phil olson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olsonpm/foodie/issues"
+  },
+  "homepage": "https://github.com/olsonpm/foodie#readme",
+  "dependencies": {
+    "awesomplete": "git+https://github.com/LeaVerou/awesomplete.git#v1.1.1",
+    "axios": "0.16.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.4.0",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "chalk": "^1.1.3",
+    "cp-file": "^4.1.1",
+    "delay": "^2.0.0",
+    "domtastic": "^0.14.0",
+    "extensionless": "^0.1.0",
+    "gulp": "3.9.1",
+    "handlebars": "^4.0.6",
+    "koa": "^2.2.0",
+    "koa-router": "^7.1.1",
+    "koa-static": "^3.0.0",
+    "lodash": "^4.17.4",
+    "mkdirp": "^0.5.1",
+    "mocha": "^3.3.0",
+    "mock-require": "2.0.2",
+    "node-sass": "^4.5.2",
+    "node-sass-css-importer": "0.0.3",
+    "normalize-scss": "^6.0.0",
+    "pify": "2.3.0",
+    "tiny-lr": "^1.0.3",
+    "webpack": "^2.4.1",
+    "yargs": "^7.1.0"
+  },
+  "zomato": {
+    "apiKey": "750a39c23d2f668c635418d252322140",
+    "apiUrl": "https://developers.zomato.com/api/v2.1/",
+    "milwaukeeId": 1267
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true,
+      "browser": true,
+      "mocha": true
+    },
+    "extends": [
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 8
+    },
+    "rules": {
+      "linebreak-style": [
+        2,
+        "unix"
+      ],
+      "semi": [
+        2,
+        "always"
+      ],
+      "no-console": 0,
+      "no-unused-vars": [
+        "error",
+        {
+          "vars": "all",
+          "args": "all",
+          "ignoreRestSiblings": false,
+          "argsIgnorePattern": "^_"
+        }
+      ]
+    }
+  }
+}

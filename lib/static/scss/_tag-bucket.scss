@@ -1,0 +1,42 @@
+#tag-bucket {
+  > li {
+    @include res-aware-element-spacing('margin-top', 'sm');
+    @include res-aware-element-spacing(
+      ('padding-top', 'padding-bottom')
+      , 'xxs'
+    );
+    @include res-aware-element-spacing('padding-left', 'xs');
+
+    background-color: $secondary-light;
+    border-radius: $radius-normal;
+    display: inline-block;
+    vertical-align: middle;
+
+    + li {
+      @include res-aware-element-spacing('margin-left', 'sm');
+    }
+
+    > .tag {
+      @include res-aware-element-spacing('padding-right', 'xs');
+
+      fill: $secondary;
+      position: relative;
+      top: -1px;
+      vertical-align: middle;
+    }
+
+    > .remove {
+      @include res-aware-element-spacing('margin-right', 'sm');
+      @include res-aware-element-spacing('margin-left', 'md');
+
+      cursor: pointer;
+      position: relative;
+      top: -1px;
+      vertical-align: middle;
+    }
+  }
+}
+
+#none-yet {
+  @include res-aware-element-spacing('margin-top', 'sm');
+}

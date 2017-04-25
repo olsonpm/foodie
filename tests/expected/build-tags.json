@@ -1,0 +1,361 @@
+{
+  "Delivery": {
+    "category": 1
+  },
+  "Dine-out": {
+    "category": 2
+  },
+  "Nightlife": {
+    "category": 3
+  },
+  "Catching-up": {
+    "category": 4
+  },
+  "Takeaway": {
+    "category": 5
+  },
+  "Cafes": {
+    "category": 6
+  },
+  "Daily Menus": {
+    "category": 7
+  },
+  "Breakfast": {
+    "category": 8,
+    "cuisine": 182
+  },
+  "Lunch": {
+    "category": 9
+  },
+  "Dinner": {
+    "category": 10
+  },
+  "Pubs & Bars": {
+    "category": 11
+  },
+  "Pocket Friendly Delivery": {
+    "category": 13
+  },
+  "Clubs & Lounges": {
+    "category": 14
+  },
+  "Afghani": {
+    "cuisine": 6
+  },
+  "African": {
+    "cuisine": 152
+  },
+  "American": {
+    "cuisine": 1
+  },
+  "Argentine": {
+    "cuisine": 151
+  },
+  "Asian": {
+    "cuisine": 3
+  },
+  "BBQ": {
+    "cuisine": 193
+  },
+  "Bakery": {
+    "cuisine": 5,
+    "establishment": 31
+  },
+  "Bar Food": {
+    "cuisine": 227
+  },
+  "Beverages": {
+    "cuisine": 270
+  },
+  "Brazilian": {
+    "cuisine": 159
+  },
+  "British": {
+    "cuisine": 133
+  },
+  "Bubble Tea": {
+    "cuisine": 247
+  },
+  "Burger": {
+    "cuisine": 168
+  },
+  "Cafe": {
+    "cuisine": 30
+  },
+  "Cajun": {
+    "cuisine": 491
+  },
+  "California": {
+    "cuisine": 956
+  },
+  "Cantonese": {
+    "cuisine": 121
+  },
+  "Caribbean": {
+    "cuisine": 158
+  },
+  "Chili": {
+    "cuisine": 971
+  },
+  "Chinese": {
+    "cuisine": 25
+  },
+  "Coffee and Tea": {
+    "cuisine": 161
+  },
+  "Creole": {
+    "cuisine": 928
+  },
+  "Cuban": {
+    "cuisine": 153
+  },
+  "Deli": {
+    "cuisine": 192,
+    "establishment": 24
+  },
+  "Desserts": {
+    "cuisine": 100
+  },
+  "Dim Sum": {
+    "cuisine": 411
+  },
+  "Diner": {
+    "cuisine": 541,
+    "establishment": 101
+  },
+  "Donuts": {
+    "cuisine": 959
+  },
+  "Eastern European": {
+    "cuisine": 651
+  },
+  "Ethiopian": {
+    "cuisine": 149
+  },
+  "European": {
+    "cuisine": 38
+  },
+  "Fast Food": {
+    "cuisine": 40,
+    "establishment": 281
+  },
+  "Fish and Chips": {
+    "cuisine": 298
+  },
+  "French": {
+    "cuisine": 45
+  },
+  "Frozen Yogurt": {
+    "cuisine": 501
+  },
+  "Fusion": {
+    "cuisine": 274
+  },
+  "German": {
+    "cuisine": 134
+  },
+  "Greek": {
+    "cuisine": 156
+  },
+  "Hawaiian": {
+    "cuisine": 521
+  },
+  "Healthy Food": {
+    "cuisine": 143
+  },
+  "Ice Cream": {
+    "cuisine": 233
+  },
+  "Indian": {
+    "cuisine": 148
+  },
+  "International": {
+    "cuisine": 154
+  },
+  "Irish": {
+    "cuisine": 135
+  },
+  "Israeli": {
+    "cuisine": 218
+  },
+  "Italian": {
+    "cuisine": 55
+  },
+  "Jamaican": {
+    "cuisine": 207
+  },
+  "Japanese": {
+    "cuisine": 60
+  },
+  "Juices": {
+    "cuisine": 164
+  },
+  "Korean": {
+    "cuisine": 67
+  },
+  "Laotian": {
+    "cuisine": 901
+  },
+  "Latin American": {
+    "cuisine": 136
+  },
+  "Lebanese": {
+    "cuisine": 66
+  },
+  "Mediterranean": {
+    "cuisine": 70
+  },
+  "Mexican": {
+    "cuisine": 73
+  },
+  "Middle Eastern": {
+    "cuisine": 137
+  },
+  "New American": {
+    "cuisine": 996
+  },
+  "Pacific Northwest": {
+    "cuisine": 963
+  },
+  "Pakistani": {
+    "cuisine": 139
+  },
+  "Pizza": {
+    "cuisine": 82
+  },
+  "Polish": {
+    "cuisine": 219
+  },
+  "Portuguese": {
+    "cuisine": 87
+  },
+  "Pub Food": {
+    "cuisine": 983
+  },
+  "Ramen": {
+    "cuisine": 320
+  },
+  "Russian": {
+    "cuisine": 84
+  },
+  "Sandwich": {
+    "cuisine": 304
+  },
+  "Seafood": {
+    "cuisine": 83
+  },
+  "Soul Food": {
+    "cuisine": 461
+  },
+  "Southern": {
+    "cuisine": 471
+  },
+  "Southern American": {
+    "cuisine": 921
+  },
+  "Southwestern": {
+    "cuisine": 966
+  },
+  "Spanish": {
+    "cuisine": 89
+  },
+  "Steak": {
+    "cuisine": 141
+  },
+  "Sushi": {
+    "cuisine": 177
+  },
+  "Taco": {
+    "cuisine": 997
+  },
+  "Taiwanese": {
+    "cuisine": 190
+  },
+  "Tapas": {
+    "cuisine": 179
+  },
+  "Tea": {
+    "cuisine": 163
+  },
+  "Teriyaki": {
+    "cuisine": 964
+  },
+  "Tex-Mex": {
+    "cuisine": 150
+  },
+  "Thai": {
+    "cuisine": 95
+  },
+  "Turkish": {
+    "cuisine": 142
+  },
+  "Vegetarian": {
+    "cuisine": 308
+  },
+  "Vietnamese": {
+    "cuisine": 99
+  },
+  "Café": {
+    "establishment": 1
+  },
+  "Casual Dining": {
+    "establishment": 16
+  },
+  "Wine Bar": {
+    "establishment": 278
+  },
+  "Quick Bites": {
+    "establishment": 21
+  },
+  "Pub": {
+    "establishment": 6
+  },
+  "Fast Casual": {
+    "establishment": 285
+  },
+  "Fine Dining": {
+    "establishment": 18
+  },
+  "Food Truck": {
+    "establishment": 81
+  },
+  "Bistro": {
+    "establishment": 91
+  },
+  "Pizzeria": {
+    "establishment": 275
+  },
+  "Dessert Parlour": {
+    "establishment": 23
+  },
+  "Brewery": {
+    "establishment": 283
+  },
+  "Noodle Shop": {
+    "establishment": 295
+  },
+  "Bar": {
+    "establishment": 7
+  },
+  "Coffee Shop": {
+    "establishment": 286
+  },
+  "Microbrewery": {
+    "establishment": 161
+  },
+  "Sandwich Shop": {
+    "establishment": 271
+  },
+  "Lounge": {
+    "establishment": 5
+  },
+  "Cocktail Bar": {
+    "establishment": 272
+  },
+  "Juice Bar": {
+    "establishment": 284
+  },
+  "Beer Garden": {
+    "establishment": 292
+  }
+}
